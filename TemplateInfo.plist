@@ -108,6 +108,7 @@
         <string>Core/Extensions/UserDefaults+Extension.swift</string>
         <string>Core/Extensions/View+Extension.swift</string>
         <string>Core/Extensions/String+Extension.swift</string>
+        <!-- Core/Navigation -->
         <string>Core/Navigation/AppCoordinatorView.swift</string>
         <string>Core/Navigation/BaseCoordinator.swift</string>
         <string>Core/Navigation/Coordinator.swift</string>
@@ -412,7 +413,7 @@
         <key>Core/Navigation/NavigationSetupModifier.swift</key>
         <dict>
             <key>Path</key>
-            <string>Core/Extensions/NavigationSetupModifier.swift</string>
+            <string>Core/Navigation/NavigationSetupModifier.swift</string>
             <key>Group</key>
             <array>
                 <string>Core</string>
@@ -422,14 +423,13 @@
         <key>Core/Navigation/Steps.swift</key>
         <dict>
             <key>Path</key>
-            <string>Core/Extensions/Steps.swift</string>
+            <string>Core/Navigation/Steps.swift</string>
             <key>Group</key>
             <array>
                 <string>Core</string>
                 <string>Navigation</string>
             </array>
         </dict>
-
         <!-- State -->
         <key>Core/ViewState.swift</key>
         <dict>
