@@ -1,0 +1,532 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <!-- Template type -->
+    <key>Kind</key>
+    <string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
+
+    <!-- Unique identifier for the template -->
+    <key>Identifier</key>
+    <string>com.example.swiftuitemplate</string>
+
+    <!-- Parent templates -->
+    <key>Ancestors</key>
+    <array>
+        <string>com.apple.dt.unit.applicationBase</string>
+    </array>
+
+    <!-- Specifies that this is a concrete (non-abstract) template -->
+    <key>Concrete</key>
+    <true/>
+
+    <!-- The file that opens by default when the project is created -->
+    <key>NameOfInitialFileForEditor</key>
+    <string>SwiftUITemplateApp.swift</string>
+
+
+    <!-- File for localization Localizable.xcstrings -->
+    <key>NameOfInitialFileForEditor</key>
+    <string>Localizable.xcstrings</string>
+
+    <!-- Supported platforms -->
+    <key>Platforms</key>
+    <array>
+        <string>com.apple.platform.iphoneos</string>
+    </array>
+
+    <!-- Targets configuration -->
+    <key>Targets</key>
+    <array>
+        <dict>
+            <key>TargetIdentifier</key>
+            <string>com.apple.dt.iosApplicationTarget</string>
+            <key>SharedSettings</key>
+            <dict>
+                <key>SWIFT_VERSION</key>
+                <string>5.0</string>
+                <key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+                <string>AppIcon</string>
+                <key>ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME</key>
+                <string>AccentColor</string>
+                <key>LD_RUNPATH_SEARCH_PATHS</key>
+                <string>$(inherited) @executable_path/Frameworks</string>
+                <key>TARGETED_DEVICE_FAMILY</key>
+                <string>1</string>
+                <key>SDKROOT</key>
+                <string>iphoneos</string>
+                <key>IPHONEOS_DEPLOYMENT_TARGET</key>
+                <string>latest_iphoneos</string>
+                <key>INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone</key>
+                <string>UIInterfaceOrientationPortrait</string>
+                <key>INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents</key>
+                <string>YES</string>
+                <key>INFOPLIST_KEY_UILaunchStoryboardName</key>
+                <string>Launch Screen</string>
+            </dict>
+            <key>Configurations</key>
+            <dict>
+                <key>Release</key>
+                <dict>
+                    <key>VALIDATE_PRODUCT</key>
+                    <string>YES</string>
+                </dict>
+            </dict>
+        </dict>
+    </array>
+
+    <!-- File structure of the template -->
+    <key>Nodes</key>
+    <array>
+        <string>Config.xcconfig</string>
+        <string>App/MVVM-C-DI-Demo.swift</string>
+
+        <string>Base/AppGradientBackground.swift</string>
+        <string>Base/ImageView.swift</string>
+
+        <!-- Screens -->
+        <string>Screens/Home/HomeView.swift</string>
+        <string>Screens/Home/HomeViewModel.swift</string>
+        <string>Screens/Home/Coordinator/HomeCoordinator.swift</string>
+        <string>Screens/Home/Coordinator/HomeNavigationStep.swift</string>
+        <string>Screens/HomeDetails/HomeDetailsView.swift</string>
+        <string>Screens/HomeDetails/HomeDetailsViewModel.swift</string>
+        <!-- Core/API -->
+        <string>Core/API/APIConfig.swift</string>
+        <string>Core/API/Network/Base/Endpoint.swift</string>
+        <string>Core/API/Network/Base/HTTPMethod.swift</string>
+        <string>Core/API/Network/Base/NetworkError.swift</string>
+        <string>Core/API/Network/Base/NetworkManager.swift</string>
+        <string>Core/API/Network/Services/HomeNetworkService.swift</string>
+        <string>Core/API/Network/Services/HomeDetailsNetworkService.swift</string>
+        <string>Core/API/Entities/ErrorMain.swift</string>
+        <string>Core/API/Entities/Category.swift</string>
+        <!-- Core/Extensions -->
+        <string>Core/Extensions/Color+Extension.swift</string>
+        <string>Core/Extensions/Font+Extension.swift</string>
+        <string>Core/Extensions/Measurement+Extension.swift</string>
+        <string>Core/Extensions/UserDefaults+Extension.swift</string>
+        <string>Core/Extensions/View+Extension.swift</string>
+        <string>Core/Extensions/String+Extension.swift</string>
+        <string>Core/Navigation/AppCoordinatorView.swift</string>
+        <string>Core/Navigation/BaseCoordinator.swift</string>
+        <string>Core/Navigation/Coordinator.swift</string>
+        <string>Core/Navigation/NavigationSetupModifier.swift</string>
+        <string>Core/Navigation/Steps.swift</string>
+        <string>Core/ViewState.swift</string>
+        <!-- DI -->
+        <string>DI/DependencyContainer.swift</string>
+        <string>DI/ViewModelAssembly.swift</string>
+        <string>DI/ServiceAssembly.swift</string>      
+        <string>DI/ResolverKey.swift</string>
+        <!-- Resources -->
+        <string>Resources/Assets.xcassets</string>
+        <string>Resources/Launch Screen.storyboard</string>
+        <string>Resources/Localizable.xcstrings</string>
+   </array>
+
+    <!-- Definitions of file paths and groups -->
+    <key>Definitions</key>
+    <dict>
+        <!-- Main application file -->
+        <key>App/MVVM-C-DI-Demo.swift</key>
+        <dict>
+            <key>Path</key>
+            <string>App/MVVM-C-DI-Demo.swift</string>
+            <key>Group</key>
+            <array>
+                <string>App</string>
+            </array>
+        </dict>
+
+        <!-- Config file -->
+        <key>Config.xcconfig</key>
+        <dict>
+            <key>Path</key>
+            <string>Config.xcconfig</string>
+        </dict>
+        <!-- Screens -->
+        <!-- Screens/Home -->
+        <key>Screens/Home/HomeView.swift</key>
+        <dict>
+            <key>Path</key>
+            <string>Screens/Home/HomeView.swift</string>
+            <key>Group</key>
+            <array>
+                <string>Screens</string>
+                <string>Home</string>
+            </array>
+        </dict>
+        <key>Screens/Home/HomeViewModel.swift</key>
+        <dict>
+            <key>Path</key>
+            <string>Screens/Home/HomeViewModel.swift</string>
+            <key>Group</key>
+            <array>
+                <string>Screens</string>
+                <string>Home</string>
+            </array>
+        </dict>
+        <key>Screens/Home/Coordinator/HomeCoordinator.swift</key>
+        <dict>
+            <key>Path</key>
+            <string>Screens/Home/Coordinator/HomeCoordinator.swift</string>
+            <key>Group</key>
+            <array>
+                <string>Screens</string>
+                <string>Home</string>
+                <string>Coordinator</string>
+            </array>
+        </dict>
+        <key>Screens/Home/Coordinator/HomeNavigationStep.swift</key>
+        <dict>
+            <key>Path</key>
+            <string>Screens/Home/Coordinator/HomeNavigationStep.swift</string>
+            <key>Group</key>
+            <array>
+                <string>Screens</string>
+                <string>Home</string>
+                <string>Coordinator</string>
+            </array>
+        </dict>
+        <!-- Screens/HomeDetails-->
+        <key>Screens/HomeDetails/HomeDetailsView.swift</key>
+        <dict>
+            <key>Path</key>
+            <string>Screens/HomeDetails/HomeDetailsView.swift</string>
+            <key>Group</key>
+            <array>
+                <string>Screens</string>
+                <string>HomeDetails</string>
+            </array>
+        </dict>
+        <key>Screens/HomeDetails/HomeDetailsViewModel.swift</key>
+        <dict>
+            <key>Path</key>
+            <string>Screens/HomeDetails/HomeDetailsViewModel.swift</string>
+            <key>Group</key>
+            <array>
+                <string>Screens</string>
+                <string>HomeDetails</string>
+            </array>
+        </dict>
+        <!-- Core/API -->
+        <key>Core/API/APIConfig.swift</key>
+        <dict>
+            <key>Path</key>
+            <string>Core/API/APIConfig.swift</string>
+            <key>Group</key>
+            <array>
+                <string>Core</string>
+                <string>API</string>
+            </array>
+        </dict>
+         <!-- Core/API/Network/Services -->
+        <key>Core/API/Network/Services/HomeNetworkService.swift</key>
+        <dict>
+            <key>Path</key>
+            <string>Core/API/Network/Services/HomeNetworkService.swift</string>
+            <key>Group</key>
+            <array>
+                <string>Core</string>
+                <string>API</string>
+                <string>Network</string>
+                <string>Services</string>
+            </array>
+        </dict>
+        <key>Core/API/Network/Services/HomeDetailsNetworkService.swift</key>
+        <dict>
+            <key>Path</key>
+            <string>Core/API/Network/Services/HomeDetailsNetworkService.swift</string>
+            <key>Group</key>
+            <array>
+                <string>Core</string>
+                <string>API</string>
+                <string>Network</string>
+                <string>Services</string>
+            </array>
+        </dict>
+        <key>Core/API/Network/Base/Endpoint.swift</key>
+        <dict>
+            <key>Path</key>
+            <string>Core/API/Network/Base/Endpoint.swift</string>
+            <key>Group</key>
+            <array>
+                <string>Core</string>
+                <string>API</string>
+                <string>Network</string>
+                <string>Base</string>
+            </array>
+        </dict>
+        <key>Core/API/Network/Base/HTTPMethod.swift</key>
+        <dict>
+            <key>Path</key>
+            <string>Core/API/Network/Base/HTTPMethod.swift</string>
+            <key>Group</key>
+            <array>
+                <string>Core</string>
+                <string>API</string>
+                <string>Network</string>
+                <string>Base</string>
+            </array>
+        </dict>
+        <key>Core/API/Network/Base/NetworkError.swift</key>
+        <dict>
+            <key>Path</key>
+            <string>Core/API/Network/Base/NetworkError.swift</string>
+            <key>Group</key>
+            <array>
+                <string>Core</string>
+                <string>API</string>
+                <string>Network</string>
+                <string>Base</string>
+            </array>
+        </dict>
+        <key>Core/API/Network/Base/NetworkManager.swift</key>
+        <dict>
+            <key>Path</key>
+            <string>Core/API/Network/Base/NetworkManager.swift</string>
+            <key>Group</key>
+            <array>
+                <string>Core</string>
+                <string>API</string>
+                <string>Network</string>
+                <string>Base</string>
+            </array>
+        </dict>
+        <key>Core/API/Entities/ErrorMain.swift</key>
+        <dict>
+            <key>Path</key>
+            <string>Core//API/Entities/ErrorMain.swift</string>
+            <key>Group</key>
+            <array>
+                <string>Core</string>
+                <string>API</string>
+                <string>Entities</string>
+            </array>
+        </dict>
+        <key>Core/API/Entities/Category.swift</key>
+        <dict>
+            <key>Path</key>
+            <string>Core/API/Entities/Category.swift</string>
+            <key>Group</key>
+            <array>
+                <string>Core</string>
+                <string>API</string>
+                <string>Entities</string>
+            </array>
+        </dict>
+        <!-- Core/Extensions -->
+        <key>Core/Extensions/Color+Extension.swift</key>
+        <dict>
+            <key>Path</key>
+            <string>Core/Extensions/Color+Extension.swift</string>
+            <key>Group</key>
+            <array>
+                <string>Core</string>
+                <string>Extensions</string>
+            </array>
+        </dict>
+        <key>Core/Extensions/Font+Extension.swift</key>
+        <dict>
+            <key>Path</key>
+            <string>Extensions/Font+Extension.swift</string>
+            <key>Group</key>
+            <array>
+                <string>Core</string>
+                <string>Extensions</string>
+            </array>
+        </dict>
+        <key>Core/Extensions/Measurement+Extension.swift</key>
+        <dict>
+            <key>Path</key>
+            <string>Core/Extensions/Measurement+Extension.swift</string>
+            <key>Group</key>
+            <array>
+                <string>Core</string>
+                <string>Extensions</string>
+            </array>
+        </dict>
+        <key>Core/Extensions/UserDefaults+Extension.swift</key>
+        <dict>
+            <key>Path</key>
+            <string>Extensions/UserDefaults+Extension.swift</string>
+            <key>Group</key>
+            <array>
+                <string>Core</string>
+                <string>Extensions</string>
+            </array>
+        </dict>
+        <key>Core/Extensions/View+Extension.swift</key>
+        <dict>
+            <key>Path</key>
+            <string>Core/Extensions/View+Extension.swift</string>
+            <key>Group</key>
+            <array>
+                <string>Core</string>
+                <string>Extensions</string>
+            </array>
+        </dict>
+        <key>Core/Extensions/String+Extension.swift</key>
+        <dict>
+            <key>Path</key>
+            <string>Core/Extensions/String+Extension.swift</string>
+            <key>Group</key>
+            <array>
+                <string>Core</string>
+                <string>Extensions</string>
+            </array>
+        </dict>
+
+        <!-- Navigation -->
+        <key>Core/Navigation/AppCoordinatorView.swift</key>
+        <dict>
+            <key>Path</key>
+            <string>Core/Extensions/AppCoordinatorView.swift</string>
+            <key>Group</key>
+            <array>
+                <string>Core</string>
+                <string>Navigation</string>
+            </array>
+        </dict>
+        <key>Core/Navigation/BaseCoordinator.swift</key>
+        <dict>
+            <key>Path</key>
+            <string>Core/Extensions/BaseCoordinator.swift</string>
+            <key>Group</key>
+            <array>
+                <string>Core</string>
+                <string>Navigation</string>
+            </array>
+        </dict>
+        <key>Core/Navigation/Coordinator.swift</key>
+        <dict>
+            <key>Path</key>
+            <string>Core/Extensions/Coordinator.swift</string>
+            <key>Group</key>
+            <array>
+                <string>Core</string>
+                <string>Navigation</string>
+            </array>
+        </dict>
+        <key>Core/Navigation/NavigationSetupModifier.swift</key>
+        <dict>
+            <key>Path</key>
+            <string>Core/Extensions/NavigationSetupModifier.swift</string>
+            <key>Group</key>
+            <array>
+                <string>Core</string>
+                <string>Navigation</string>
+            </array>
+        </dict>
+        <key>Core/Navigation/Steps.swift</key>
+        <dict>
+            <key>Path</key>
+            <string>Core/Extensions/Steps.swift</string>
+            <key>Group</key>
+            <array>
+                <string>Core</string>
+                <string>Navigation</string>
+            </array>
+        </dict>
+
+        <!-- State -->
+        <key>Core/ViewState.swift</key>
+        <dict>
+            <key>Path</key>
+            <string>Core/ViewState.swift</string>
+            <key>Group</key>
+            <array>
+                <string>Core</string>
+            </array>
+        </dict>
+
+        <!-- DI -->
+        <key>DI/DependencyContainer.swift</key>
+        <dict>
+            <key>Path</key>
+            <string>DI/DependencyContainer.swift</string>
+            <key>Group</key>
+            <array>
+                <string>DI</string>
+            </array>
+        </dict>
+        <key>DI/ViewModelAssembly.swift</key>
+        <dict>
+            <key>Path</key>
+            <string>DI/ViewModelAssembly.swift</string>
+            <key>Group</key>
+            <array>
+                <string>DI</string>
+            </array>
+        </dict>
+        <key>DI/ServiceAssembly.swift</key>
+        <dict>
+            <key>Path</key>
+            <string>DI/ServiceAssembly.swift</string>
+            <key>Group</key>
+            <array>
+                <string>DI</string>
+            </array>
+        </dict>
+        <key>DI/ResolverKey.swift</key>
+        <dict>
+            <key>Path</key>
+            <string>DI/ResolverKey.swift</string>
+            <key>Group</key>
+            <array>
+                <string>DI</string>
+            </array>
+        </dict>
+
+        <!-- Base files -->
+        <key>Base/ImageView.swift</key>
+        <dict>
+            <key>Path</key>
+            <string>Base/ImageView.swift</string>
+            <key>Group</key>
+            <array>
+                <string>Base</string>
+            </array>
+        </dict>
+        <key>Base/AppGradientBackground.swift</key>
+        <dict>
+            <key>Path</key>
+            <string>Base/AppGradientBackground.swift</string>
+            <key>Group</key>
+            <array>
+                <string>Base</string>
+            </array>
+        </dict>
+
+        <!-- Resources -->
+        <key>Resources/Assets.xcassets</key>
+        <dict>
+            <key>Path</key>
+            <string>Resources/Assets.xcassets</string>
+            <key>Group</key>
+            <array>
+                <string>Resources</string>
+            </array>
+        </dict>
+        <key>Resources/Launch Screen.storyboard</key>
+        <dict>
+            <key>Path</key>
+            <string>Resources/Launch Screen.storyboard</string>
+            <key>Group</key>
+            <array>
+                <string>Resources</string>
+            </array>
+        </dict>
+        <key>Resources/Localizable.xcstrings</key>
+        <dict>
+            <key>Path</key>
+            <string>Resources/Localizable.xcstrings</string>
+            <key>Group</key>
+            <array>
+                <string>Resources</string>
+            </array>
+        </dict>
+    </dict>
+</dict>
+</plist>
