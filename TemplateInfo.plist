@@ -383,7 +383,7 @@
         <key>Core/Navigation/AppCoordinatorView.swift</key>
         <dict>
             <key>Path</key>
-            <string>Core/Extensions/AppCoordinatorView.swift</string>
+            <string>Core/Navigation/AppCoordinatorView.swift</string>
             <key>Group</key>
             <array>
                 <string>Core</string>
@@ -393,7 +393,7 @@
         <key>Core/Navigation/BaseCoordinator.swift</key>
         <dict>
             <key>Path</key>
-            <string>Core/Extensions/BaseCoordinator.swift</string>
+            <string>Core/Navigation/BaseCoordinator.swift</string>
             <key>Group</key>
             <array>
                 <string>Core</string>
@@ -403,7 +403,7 @@
         <key>Core/Navigation/Coordinator.swift</key>
         <dict>
             <key>Path</key>
-            <string>Core/Extensions/Coordinator.swift</string>
+            <string>Core/Navigation/Coordinator.swift</string>
             <key>Group</key>
             <array>
                 <string>Core</string>
